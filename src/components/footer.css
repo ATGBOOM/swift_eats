@@ -1,0 +1,102 @@
+/* Footer Base Styles */
+.footer {
+    background-color: #F567B2;
+    color: #fff;
+    padding: 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column; /* Default column layout for smaller screens */
+    align-items: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem; /* Add spacing between sections for better layout */
+}
+
+.footer-section {
+    margin: 1rem 0;
+}
+
+.footer-section h3,
+.footer-section h2 {
+    color: #fff;
+    margin-bottom: 1rem;
+    font-size: 1.2rem; /* Responsive font size */
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+    text-align: center; /* Center align list items */
+}
+
+.footer-section ul li {
+    margin: 0.5rem 0;
+}
+
+.footer-section a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 1rem; /* Adjust link font size for readability */
+}
+
+.footer-section a:hover {
+    color: #fff;
+    text-decoration: underline; /* Highlight links on hover */
+}
+
+/* Footer bottom section */
+.footer-bottom {
+    margin-top: 2rem;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+    .footer-content {
+        flex-direction: row; /* Change to row layout for wider screens */
+        justify-content: space-evenly;
+        align-items: flex-start; /* Align sections to the top */
+    }
+
+    .footer-section {
+        margin: 0 1rem; /* Add horizontal spacing between sections */
+    }
+
+    .footer-section h3,
+    .footer-section h2 {
+        font-size: 1.5rem; /* Larger headings for desktop */
+    }
+
+    .footer-section ul {
+        text-align: left; /* Align lists to the left for desktop */
+    }
+
+    .footer-bottom {
+        font-size: 1rem; /* Adjust bottom section font size for desktop */
+    }
+}
+
+/* Extra Small Screens (max-width: 480px) */
+@media (max-width: 480px) {
+    .footer {
+        padding: 1rem; /* Reduce padding for very small screens */
+    }
+
+    .footer-section h3,
+    .footer-section h2 {
+        font-size: 1rem; /* Smaller headings for very small screens */
+    }
+
+    .footer-section ul li {
+        font-size: 0.9rem; /* Adjust list item font size */
+    }
+
+    .footer-bottom {
+        font-size: 0.8rem; /* Smaller bottom text for small screens */
+    }
+}

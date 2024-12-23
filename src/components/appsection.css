@@ -1,0 +1,53 @@
+.appsection {
+    background-color: #FFC3E3;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    padding: 20px; /* Add padding for better spacing */
+}
+
+.text_section {
+    color: #000000;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center; /* Center text for smaller screens */
+    margin-bottom: 20px; /* Add spacing between sections */
+}
+
+.store_images {
+    display: flex;
+    gap: 10px;
+    justify-content: center; /* Center buttons on smaller screens */
+    flex-wrap: wrap; /* Allow wrapping if necessary */
+}
+
+.store_images img {
+    width: 150px; /* Adjust as needed for button size */
+    height: auto;
+}
+
+.app_image img {
+    max-width: 100%; /* Ensure image scales on smaller screens */
+    height: auto;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .appsection {
+        flex-direction: column; /* Stack sections vertically */
+    }
+
+    .text_section {
+        font-size: 1.2rem; /* Slightly smaller text on mobile */
+    }
+
+    .store_images img {
+        width: 120px; /* Adjust button size for smaller screens */
+    }
+
+    .app_image {
+        margin-top: 20px; /* Add spacing between sections */
+    }
+}

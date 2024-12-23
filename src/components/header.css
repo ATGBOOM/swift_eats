@@ -1,0 +1,89 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #FFC3E3; /* Match color with appsection */
+    border-bottom: 2px solid #000;
+}
+
+.navbar-logo {
+    display: flex;
+    align-items: center;
+    color: #000000;
+}
+
+.navbar-logo a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #000;
+    margin-left: 10px; /* Adds a little space between the logo and text */
+}
+
+.navbar-links {
+    display: flex;
+    list-style-type: none;
+}
+
+.navbar-links li {
+    margin-left: 1.5rem;
+}
+
+.navbar-links a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.navbar-menu {
+    display: none; /* Hidden on desktop */
+    color: #000;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* Dropdown Menu for Mobile */
+.navbar-links.open {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;  /* Adjust as needed */
+    left: 50%;
+    transform: translateX(-50%); /* Centers the menu */
+    background-color: #FFC3E3; /* Match color with appsection */
+    width: 200px; /* Reduced width of the dropdown */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    border-radius: 8px; /* Rounded corners for dropdown */
+}
+
+.navbar-links.open li {
+    margin: 1rem 0;
+    text-align: center;
+}
+
+.navbar-links.open a {
+    padding: 0.5rem 1rem;
+    color: #000;
+    text-decoration: none;
+}
+
+.navbar-links.open a:hover {
+    background-color: #f0f0f0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar-links {
+        display: none; /* Hide links on small screens */
+        width: 100%;
+    }
+
+    .navbar-menu {
+        display: block; /* Show menu icon on small screens */
+    }
+
+    .navbar-links.open {
+        display: flex; /* Show the links when the menu is open */
+    }
+}
